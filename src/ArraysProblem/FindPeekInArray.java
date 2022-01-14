@@ -9,6 +9,9 @@ public class FindPeekInArray {
         int index1 = findPeekElement(array1); // first
         int index2 = findPeekElement(array2); // middle
 
+        // find peek element is => element is greater than both of its neighbour.
+
+
         System.out.println("Find Peek at index " + index + " is " + array[index]);
         System.out.println("Find Peek at index " + index1 + " is " + array1[index1]);
         System.out.println("Find Peek at index " + index2 + " is " + array2[index2]);
@@ -70,4 +73,7 @@ public class FindPeekInArray {
         }
         return -1;
     }
+
+
+
 }
