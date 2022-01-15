@@ -1,5 +1,6 @@
 package ArraysProblem;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -31,10 +32,21 @@ public class UnionAndIntersectionProblem {
             set.add(arr2[i]);
         }
 
-        System.out.println(set.toString());
+        System.out.println(" Union ="+set.toString());
     }
 
     private static void findIntersection(int[] arr1, int[] arr2) {
+//        int arr1[]={1,2,3,4,5};
+//        int arr2[]={2,3,4,5,6,7};
+            int j=0;
+            int arr[]=new int[arr1.length];
+        for (int i = 0; i <arr1.length ; i++) {
+            if (arr1[i]==arr2[j]){
+                arr[j]=arr1[i];
+                j++;
+            }
+        }
+        System.out.println("Intersection Array is ="+Arrays.toString(arr));
 
     }
 
