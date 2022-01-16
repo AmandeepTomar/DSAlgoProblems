@@ -1,5 +1,12 @@
 package ArraysProblem;
 
+/**
+ * Maximum and minimum of an array using minimum number of comparisons
+ * Input :  int arr[] = {1000, 11, 445, 1, 330, 3000};
+ * Output: Minimum element is 1
+ * Maximum element is 3000
+ * */
+
 public class FindMaxMinElementInArray {
 
     public static void main(String[] args) {
