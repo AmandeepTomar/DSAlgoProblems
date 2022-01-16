@@ -5,8 +5,20 @@ import java.util.Arrays;
 public class LeftAndRightRotationProblem {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
-        int times=2;
+        int times=4;
         rightRotationApproach1(arr,times);
+
+        int arr1[]={1,2,3,4,5};
+        rightRotationBestApproach(arr1,times);
+
+
+        int arr2[]={1,2,3,4,5};
+        leftRotationApproach1(arr2,times);
+
+         int arr3[]={1,2,3,4,5};
+        leftRotationBestApproach(arr3,times);
+
+
     }
 
     private static void rightRotationApproach1(int[] arr, int times) {
@@ -18,11 +30,48 @@ public class LeftAndRightRotationProblem {
         for (int i = 0; i <times ; i++) {
             int temp=arr[n-1];
             for (int j = n-1; j > 0 ; j--) {
-                System.out.println(j);
                 arr[j]=arr[j-1];
             }
             arr[0]=temp;
         }
         System.out.println("Right rotation of Array"+ Arrays.toString(arr)+"times "+times);
     }
+
+    private static void rightRotationBestApproach(int[] arr,int times){
+        int n=arr.length;
+        int[] newArray=new int[n];
+        for (int i = 0; i <n ; i++) {
+            int newIndex=(i+times)%n;
+            newArray[newIndex]=arr[i];
+        }
+        System.out.println("Right rotation of Array"+ Arrays.toString(newArray)+"times "+times);
+    }
+
+    private static void leftRotationApproach1(int arr[], int times){
+        // Left Rotate means
+        // 1,2,3,4,5 -> 2,3,4,5,1
+        int n=arr.length;
+
+        for (int i = 0; i <times ; i++) {
+            int temp=arr[0];
+            for (int j = 0; j <n-1 ; j++) {
+                arr[j]=arr[j+1];
+            }
+            arr[n-1]=temp;
+        }
+        System.out.println("Left Rotation  "+Arrays.toString(arr)+" times "+times);
+    }
+
+    private static void leftRotationBestApproach(int arr[],int times){
+        int n=arr.length;
+        int newArr[]=new int[n];
+        for (int i = 0; i <n ; i++) {
+            int newIndex=(i+(arr.length-times)) % arr.length;
+            newArr[newIndex]=arr[i];
+        }
+        System.out.println("Left Rotation "+Arrays.toString(newArr)+" times "+times);
+    }
+
+
+
 }
