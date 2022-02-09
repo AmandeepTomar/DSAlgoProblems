@@ -2,6 +2,7 @@ package HackerrankProblems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class LeftRotationProblem{
@@ -12,7 +13,7 @@ public class LeftRotationProblem{
         list.add(3);
         list.add(4);
         list.add(5);
-        System.out.println(rotLeft(list,4)); // [5, 1, 2, 3, 4]
+        System.out.println(rotLeft(list,1)); // [5, 1, 2, 3, 4]
     }
 
     public static List<Integer> rotLeft(List<Integer> a, int d) {
@@ -28,6 +29,7 @@ public class LeftRotationProblem{
         }
 
         System.out.println(Arrays.toString(arr));
+        System.out.println("List "+a);
         return Arrays.asList(arr);
 
     }
