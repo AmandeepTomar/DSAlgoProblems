@@ -49,6 +49,9 @@ public class ReverseNumber {
     private static void findLargestDigitFromNumber(int number){
         // this one is not the best one
         String num=number+"";
+        int numArr[]=new int[num.length()];
+        System.out.println("SizeOfArray ="+numArr.length+" -  ");
+      //  String num=number+"";
         StringBuilder sb=new StringBuilder();
         List<Integer> list=new LinkedList<>();
 
@@ -67,9 +70,6 @@ public class ReverseNumber {
         int minimum=Integer.parseInt(sb.toString());
 
         System.out.println(" Minimum is "+minimum);
-
-
-
     }
 
 

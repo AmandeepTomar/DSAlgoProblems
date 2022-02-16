@@ -27,6 +27,10 @@ package ArraysProblem;
 
  Constraints:
  1 <= N <= 109
+
+ Explination
+ trailing zeros in 10! => 10/5 +10/5pow 2 =>2+0 so it is 2.
+ trailing zeros in 100! => 100/5 +100/5pow 2 +100/5 pow 3 =>20+4+0 so it is 24.
  * */
 public class FindTrailingZerosOffactorials {
     public static void main(String[] args) {
@@ -38,8 +42,8 @@ public class FindTrailingZerosOffactorials {
     }
 
     private static int calculatefactorial(int num) {
-        if (num==0 || num==1 || num==2)
-        return num;
+        if (num==0 || num==1)
+        return 1;
         else return calculatefactorial(num-1)*num;
     }
 
