@@ -28,7 +28,7 @@ public class StaticInitConstructor {
 class SampleTest extends SuperSample {
 
     public SampleTest() {
-        super();
+       // super();
         System.out.println("Constructor called");
     }
 
@@ -55,3 +55,5 @@ class SuperSample{
         System.out.println("SuperSample Static block called");
     }
 }
+
+

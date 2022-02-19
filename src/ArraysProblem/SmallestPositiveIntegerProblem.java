@@ -1,4 +1,7 @@
 package ArraysProblem;
+
+import java.util.Arrays;
+
 /**
  * Smallest Positive Integer that can not be represented as Sum
  * Hard Accuracy: 49.71% Submissions: 26245 Points: 8
@@ -42,6 +45,8 @@ public class SmallestPositiveIntegerProblem {
         int n1=4;
         System.out.println(solution(array,n)+" Is Smallest Positive Integer that can not be represented as Sum ");
         System.out.println(solution(array1,n1)+" Is Smallest Positive Integer that can not be represented as Sum ");
+
+        checkArrayCopy();
     }
 
     private static long solution(long array[] ,int num) {
@@ -53,4 +58,15 @@ public class SmallestPositiveIntegerProblem {
         }
         return minNo;
     }
+
+    private static void checkArrayCopy(){
+        int a[]={1,2,3,4,5};
+        int b[]={3,2,1,4,5};
+
+        a= Arrays.copyOf(b,b.length);
+
+        System.out.println(Arrays.toString(a));
+    }
+
+
 }
