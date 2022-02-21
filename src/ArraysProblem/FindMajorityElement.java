@@ -15,6 +15,53 @@ public class FindMajorityElement {
         int[] array = new int[]{4,7,4,4,7,4,4,9,4,3};
         findMajorityOfElementWithBestOne(array);
         findMajorityWithN2Complexity(array);
+        System.out.println(majorityElement(array,array.length));
+    }
+
+    // Fit in all situation  this one is correct for long input
+
+    static int majorityElement(int a[], int size)
+    {
+
+        //Take the first elem as the majority elem
+        //count variable will be the count for our majority variable
+        int majorityIndex = 0;
+        int count = 1;
+
+        for(int i = 1; i < size; i++){
+            if(a[i] == a[majorityIndex]){
+                //if we are getting more count for our taken majority variable
+                //then it might me the answer
+                count++;
+            }else{
+                //decrease the preference for our majority variable
+                count--;
+            }
+
+            if(count == 0){
+                //We'll take curr elem as our majority elem
+                //when the count for our previous majority elem becomes 0
+                majorityIndex = i;
+                count = 1;
+            }
+        }
+
+        //Check if the last majority elem is actually our answer or not
+        if(count > 0){
+            int new_count = 0;
+            for(int i = 0; i < size; i++){
+                if(a[i] == a[majorityIndex])
+                    new_count++;
+            }
+
+            if(new_count > (int)size/2)
+                return a[majorityIndex];
+
+        }
+
+        //if the count for our last majority elem is 0, then no majority elem exists
+        return -1;
+
     }
 
 
@@ -52,4 +99,7 @@ public class FindMajorityElement {
             }
         }
     }
+
+
+
 }
