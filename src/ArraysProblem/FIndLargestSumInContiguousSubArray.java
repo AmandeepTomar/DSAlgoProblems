@@ -38,7 +38,9 @@ public  class FIndLargestSumInContiguousSubArray {
         System.out.println("Largest Sum "+maxSum);
     }
 
+    // used this one always
     private static void findLargestSumBestApproach(int arr[]){
+        // int arr[]={-1,-4,4,6,8,-2};
         int current=arr[0];
         int maxSum=current;
         for (int i = 0; i < arr.length; i++) {

@@ -20,7 +20,6 @@ public class ConvertBinaryToDecimal {
          //   System.out.println(arr[i]);
             if (arr[i]=='1'){
                 decimal=decimal+Math.pow(2,(arr.length-1-i));
-               // System.out.println(decimal+" power "+Math.pow(2,(arr.length-1-i))+" i "+(arr.length-1-i));
             }
         }
         System.out.println("Decimal values id "+(long)decimal+" of binary "+ Arrays.toString(arr));

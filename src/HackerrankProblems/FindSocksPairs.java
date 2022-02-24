@@ -61,6 +61,7 @@ public class FindSocksPairs {
 
     public static int sockMerchant(int n, List<Integer> ar) {
         // Write your code here
+
         HashMap<Integer,Integer> map=new HashMap<>();
         for(Integer i : ar){
             if(map.containsKey(i)){
@@ -72,11 +73,17 @@ public class FindSocksPairs {
             }
         }
         int pair=0;
+
+        // HashMap
+        // 10->4
+        // 20->3
+        // 30->1
+        // 50 ->1
         for (Integer key : map.keySet()){
 
-            Integer value=map.get(key);
-            int mod=value/2;
-            pair=pair+mod;
+            Integer value=map.get(key); // 10 , 20 , 30
+            int mod=value/2; // mod =4/2=2 , mod=3/2=1  , 1/2 =0
+            pair=pair+mod;  // pair = 0+2 =2  , 2+1=3  , 3+0
 
         }
 

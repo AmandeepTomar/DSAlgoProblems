@@ -32,8 +32,8 @@ public class FindMissingNumber {
        // int arr[]={2};
         int arr[]={6,1,2,8,3,4,7,10,5};
       //  System.out.println("Mission no is = "+findMissionNoInNTime(arr));
-        System.out.println("Mission no is = "+MissingNumber(arr,arr.length+1));
-        System.out.println("Factorial no is = "+calculatefactorial(6));
+        System.out.println("Mission no is = "+findMissingNoInNby2(arr));
+      //  System.out.println("Factorial no is = "+calculatefactorial(6));
 
     }
 

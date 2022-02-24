@@ -37,10 +37,10 @@ public class FindKthLargestNumberInArray {
         for (int i=0;i<arr.length;i++){
             queue.add(arr[i]);
             if (queue.size()>kth) {
-                queue.poll();
+                queue.poll(); // remove
             }
         }
-        return queue.peek();
+        return queue.peek(); // fetch
     }
 }
 

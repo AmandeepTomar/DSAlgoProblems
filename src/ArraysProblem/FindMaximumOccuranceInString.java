@@ -17,8 +17,10 @@ public class FindMaximumOccuranceInString {
 
     public static void main(String[] args) {
         String s="aabbccddee";
+        String s1="aabbccddeee";
 
         solution(s);
+        solution(s1);
     }
 
     private static void solution(String s){

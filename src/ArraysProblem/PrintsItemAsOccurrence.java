@@ -38,6 +38,8 @@ public class PrintsItemAsOccurrence {
             list.add(new Pair(key,map.get(key)));
         }
 
+        //
+       // a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
         Collections.sort(list,new Comparator<Pair>(){
             public int compare(Pair p1,Pair p2){
                 return p1.getCount()-p2.getCount();
@@ -60,9 +62,12 @@ public class PrintsItemAsOccurrence {
         return listFinal;
     }
 
+
+
+
 }
 
-class Pair{
+class Pair {
     private int value;
     private int count;
 
@@ -86,6 +91,7 @@ class Pair{
     public void setCount(int count) {
         this.count = count;
     }
+
 
     @Override
     public String toString() {

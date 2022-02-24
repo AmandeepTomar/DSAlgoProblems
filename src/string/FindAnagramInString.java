@@ -1,6 +1,7 @@
 package string;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * ANAGRAM means the frequency of character is same.
@@ -63,7 +64,7 @@ public class FindAnagramInString {
 
     private static boolean compareMapFrequency(HashMap<Character, Integer> pMap, HashMap<Character, Integer> sMap) {
         for (Character ch:pMap.keySet()){
-            if (pMap.getOrDefault(ch,0)!=sMap.get(ch)){
+            if (!Objects.equals(pMap.getOrDefault(ch, 0), sMap.get(ch))){
                 return false;
             }
         }

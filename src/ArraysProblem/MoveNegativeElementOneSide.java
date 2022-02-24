@@ -8,12 +8,31 @@ import static ArraysProblem.Sort0s1sand2sWithoutSorting.swap;
 public class MoveNegativeElementOneSide {
 
     public static void main(String[] args) {
-        int arr[]={-1,1-2,2-3,-5,5,6,7,8,-7,9};
+        int arr[]={-1,1,-2,2,3,-5,5,6,7,8,-7,9};
 
       //  approach1(arr);
-        approach2(arr);
+    //    approach2(arr);
         approach3(arr);
-        approach4(arr);
+        //approach4(arr);
+        rearrange(arr,arr.length);
+    }
+
+
+// correct one
+    static void rearrange(int arr[], int n)
+    {
+        int j = 0, temp;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] < 0) {
+                if (i != j) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+                j++;
+            }
+        }
+        System.out.println(Arrays.toString(arr));;
     }
 
     private static void approach1(int[] arr) {
@@ -64,21 +83,26 @@ public class MoveNegativeElementOneSide {
     static void approach3(int arr[]){
         // in this approach we will use the two pointer and swaping
         // i and j
+      //  int arr[]={-1,1-2,2-3,-5,5,6,7,8,-7,9}; i=0,j=11
         int j=arr.length-1;
         for (int i = 0; i <arr.length ; i++) {
             if (arr[i]<0){
                 i++;
             }else {
                 swap(arr,i,j);
+                System.out.println(Arrays.toString(arr));
                 j--;
-                i++;
+               // i++;
             }
         }
 
         System.out.println(Arrays.toString(arr));
-        System.out.println("========================");
+        System.out.println("======================== 3");
 
     }
+
+
+
 
     static void approach4(int arr[]){
         int left=0;
@@ -97,6 +121,6 @@ public class MoveNegativeElementOneSide {
         }
 
         System.out.println(Arrays.toString(arr));
-        System.out.println("========================");
+        System.out.println("========================4");
     }
 }
