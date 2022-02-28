@@ -15,10 +15,11 @@ public class HashMapQuestions {
 
        assert map.get(new Currency("US"))==1.1;
 
-     //   System.out.println(map.get(new Currency("US"))); // null
+        System.out.println(map.get(new Currency("US"))); // null
         System.out.println(map.get(new Currency(null))); // null as key 
 
         System.out.println(map.get(null));
+
 
 
     }
@@ -37,14 +38,14 @@ class Currency{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Currency currency = (Currency) o;
-        System.out.println(currencyCode+" --- "+currency.currencyCode);
+      //  System.out.println(currencyCode+" --- "+currency.currencyCode);
         return Objects.equals(currencyCode, currency.currencyCode);
     }
 
     @Override
     public int hashCode() {
         int hashCode=Objects.hash(currencyCode);
-        System.out.println(hashCode);
+       // System.out.println(hashCode);
         return hashCode;
     }
 }

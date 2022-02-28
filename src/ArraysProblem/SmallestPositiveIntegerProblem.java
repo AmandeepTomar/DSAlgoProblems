@@ -51,9 +51,9 @@ public class SmallestPositiveIntegerProblem {
 
     private static long solution(long array[] ,int num) {
         long minNo=1;
-        for (long l:array){
-            if (minNo>=l){
-                minNo=minNo+l;
+        for (long item:array){
+            if (minNo>=item){
+                minNo=minNo+item;
             }
         }
         return minNo;

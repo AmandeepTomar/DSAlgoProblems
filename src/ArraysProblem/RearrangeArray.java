@@ -42,6 +42,7 @@ public class RearrangeArray {
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(arr1));
 
+        // reverse array here
         for (int i = 0; i <arr.length/2 ; i++) {
             int temp=arr[i];
             arr[i]=arr[arr.length-1-i];

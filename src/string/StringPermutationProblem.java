@@ -1,7 +1,6 @@
 package string;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class StringPermutationProblem {
 
@@ -58,6 +57,8 @@ public class StringPermutationProblem {
         array[i]=temp;
         return String.valueOf(array);
     }
+
+
 
 
 }
