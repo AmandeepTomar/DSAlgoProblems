@@ -16,7 +16,7 @@ import java.util.HashMap;
 public class FindMaximumOccuranceInString {
 
     public static void main(String[] args) {
-        String s="aabbccddee";
+        String s="aabbbccddeeee";
         String s1="aabbccddeee";
 
         solution(s);
