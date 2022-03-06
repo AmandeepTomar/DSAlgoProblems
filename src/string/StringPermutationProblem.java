@@ -13,7 +13,7 @@ public class StringPermutationProblem {
 
         int left=0;
         int right=str.length()-1;
-    //    findStringPermutation(str,left,right);
+        findStringPermutation(str,left,right);
         System.out.println();
         findStringPermutationUsingSubstring(str,"");
     }

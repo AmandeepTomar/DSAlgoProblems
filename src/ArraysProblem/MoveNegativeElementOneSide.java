@@ -23,6 +23,7 @@ public class MoveNegativeElementOneSide {
     {
         int j = 0, temp;
         for (int i = 0; i < n; i++) {
+            // if positive no need to increase j
             if (arr[i] < 0) {
                 if (i != j) {
                     // swap
