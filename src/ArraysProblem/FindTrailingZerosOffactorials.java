@@ -52,7 +52,7 @@ public class FindTrailingZerosOffactorials {
         int result=0;
         int p=5;
         while ((num/p)>0){
-            result = result+ num/5;
+            result = result + num/5;
             p=p*5;
         }
         return result;

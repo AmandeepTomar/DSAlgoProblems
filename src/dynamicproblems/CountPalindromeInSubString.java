@@ -13,7 +13,6 @@ public class CountPalindromeInSubString {
         boolean dp[][]=new boolean[n][n];
         int count=0;
         for (int g = 0; g < n ; g++) {
-
             for (int i = 0 , j=g; j<dp.length ; i++,j++) {
                 if (g==0){
                     dp[i][j]=true;

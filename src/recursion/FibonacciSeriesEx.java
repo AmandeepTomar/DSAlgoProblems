@@ -9,10 +9,10 @@ public class FibonacciSeriesEx {
 
     private static int getFibonacciSeries(int a) {
         if (a==0){
-            System.out.println(0);
+           // System.out.println(0);
             return 0;
         } else if (a<2){
-            System.out.println(1);
+            //System.out.println(1);
             return 1;
         }else {
             int num=getFibonacciSeries(a-1)+getFibonacciSeries(a-2);

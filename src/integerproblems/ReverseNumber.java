@@ -17,7 +17,7 @@ public class ReverseNumber {
         int number=num;
         int revNo=0;
         while (number>0){
-            revNo=revNo*10+number%10;
+            revNo=revNo*10 + number%10;
             number=number/10;
         }
         System.out.println("Number is ="+num+"Reversed No "+revNo);

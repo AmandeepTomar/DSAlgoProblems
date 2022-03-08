@@ -1,4 +1,7 @@
 package recursion;
+
+import java.util.Objects;
+
 /**
  * Step1 base case
  * Step2 find the relation between problem and sub Problem.
@@ -58,5 +61,25 @@ public class RecursionApproach {
         System.out.println(num);
         return printNNumbers(num-1);
 
+    }
+}
+
+
+class  Test{
+
+   int value;
+   String data;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Test test = (Test) o;
+        return value == test.value && Objects.equals(data, test.data);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value, data);
     }
 }
