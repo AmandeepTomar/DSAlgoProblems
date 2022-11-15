@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DsAlgoPrep.iml" filepath="$PROJECT_DIR$/DsAlgoPrep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSAlgoProblems.iml" filepath="$PROJECT_DIR$/DSAlgoProblems.iml" />
     </modules>
   </component>
 </project>
