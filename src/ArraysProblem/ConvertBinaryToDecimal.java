@@ -17,7 +17,7 @@ public class ConvertBinaryToDecimal {
     private static void findDecimal(char[] arr) {
         double decimal=0;
         for (int i = 1; i < arr.length ; i++) {
-         //   System.out.println(arr[i]);
+            System.out.println(arr[i]);
             if (arr[i]=='1'){
                 decimal=decimal+Math.pow(2,(arr.length-1-i));
             }

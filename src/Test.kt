@@ -13,4 +13,10 @@ fun main() {
         println(" a is 11")
     }
 
+    val s = "newData"
+    val t = "newDatt"
+
+    val values =  s.groupingBy { it }.eachCount() == t.groupingBy { it }.eachCount()
+    println(values)
+
 }

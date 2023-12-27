@@ -2,7 +2,7 @@ package ArraysProblem;
 
 import java.util.HashMap;
 
-public class FindRepeatingCountOfWorks {
+public class FindRepeatingCountOfWords {
     public static void main(String[] args) {
         System.out.println(repeatedString("abcancaabb"));
     }

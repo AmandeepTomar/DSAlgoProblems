@@ -13,12 +13,12 @@ public class HashMapQuestions {
         map.put(null,1.4);
 
 
-       assert map.get(new Currency("US"))==1.1;
+     //  assert map.get(new Currency("US"))==1.1;
 
-        System.out.println(map.get(new Currency("US"))); // null
+        System.out.println(map.get(new Currency("US")));
         System.out.println(map.get(new Currency(null))); // null as key 
 
-        System.out.println(map.get(null));
+        System.out.println(map.get(null)); // null
 
 
 

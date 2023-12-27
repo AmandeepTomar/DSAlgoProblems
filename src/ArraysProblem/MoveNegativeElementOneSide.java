@@ -21,6 +21,7 @@ public class MoveNegativeElementOneSide {
 // correct one
     static void rearrange(int arr[], int n)
     {
+       // int arr[]={-1,1,-2,2,3,-5,5,6,7,8,-7,9};
         int j = 0, temp;
         for (int i = 0; i < n; i++) {
             // if positive no need to increase j

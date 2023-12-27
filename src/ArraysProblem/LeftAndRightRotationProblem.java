@@ -1,6 +1,5 @@
 package ArraysProblem;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class LeftAndRightRotationProblem {
@@ -21,7 +20,7 @@ public class LeftAndRightRotationProblem {
 
         int [] nums={1,2,3,4,5,6,7};
        // rotate(nums,1);
-        gogRotate(new int[]{1,2,3,4,5},2,5);
+        gogRotateLeft(new int[]{1,2,3,4,5},2,5);
 
 
 
@@ -29,7 +28,7 @@ public class LeftAndRightRotationProblem {
 
     }
 
-    private static void gogRotate(int arr[],int d,int n) {
+    private static void gogRotateLeft(int arr[], int d, int n) {
         int newArr[] = new int[n];
         for(int i=0;i<n;i++){
             int newIndex=(i-d)%n;
