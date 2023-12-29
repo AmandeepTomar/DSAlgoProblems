@@ -16,7 +16,7 @@ import java.io.Serializable;
  * return instance;
  * }
  * Break 3. We can break using cloning object.
- * Solution -> implement the Clonable interface and override the clone method and return the same instance.
+ * Solution -> implement the Clonable interfacedetails and override the clone method and return the same instance.
  */
 public class SingletonClass implements Serializable, Cloneable {
     private static volatile SingletonClass instance;
