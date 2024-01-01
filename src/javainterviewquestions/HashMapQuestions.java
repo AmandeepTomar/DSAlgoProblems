@@ -1,5 +1,6 @@
 package javainterviewquestions;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -11,6 +12,7 @@ import java.util.Objects;
  *
  */
 public class HashMapQuestions {
+
 
     public static void main(String[] args) {
         Map<Currency,Double> map=new HashMap<>();
