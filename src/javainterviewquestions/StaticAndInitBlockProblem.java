@@ -26,20 +26,20 @@ class X {
     static int i = 1111;
 
     static{
-        i = i-- - --i;    //L1
+        i = i-- - --i;    //L1 -2
     }
 
     {
-        i = i++ + ++i;    //L2
+        i = i++ + ++i;    //L2 // +2
     }
 }
 
 class Y extends X{
     static{
-        i = --i - i--;    //L3
+        i = --i - i--;    //L3 -1
     }
     {
-        i = ++i + i++;    //L4
+        i = ++i + i++;    //L4  +1
     }
 }
 

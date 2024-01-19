@@ -40,8 +40,10 @@ public class ArrayProductPuzzle {
 
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4};
-        solution1(arr);
-        solutionWithNSquare(arr);
+        int arr1[] = {4,3,2,1,2};  // op [48,16,24,48,24]
+        solution1(arr1);
+        solutionWithNSquare(arr1);
+        productExceptSelf(arr1);
 
     }
 
@@ -74,7 +76,7 @@ public class ArrayProductPuzzle {
         }
         System.out.println("Left Product Array " + Arrays.toString(left));
         int temp2 = 1;
-        for (int i = left.length - 1; i >= 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             temp2 = temp2 * arr[i];
             right[i] = temp2;
         }
@@ -82,7 +84,7 @@ public class ArrayProductPuzzle {
         //{1,2,3,4}
         for (int i = 0; i < arr.length; i++) {
             if (i == 0) {
-                output[0] = right[1];
+                output[0] = right[0];
             } else if (i == arr.length - 1) {
                 output[arr.length - 1] = left[arr.length - 2];
             } else {
@@ -111,6 +113,41 @@ public class ArrayProductPuzzle {
         }
 
         System.out.println("Solution with N2 "+Arrays.toString(output));
+    }
+
+
+    public static int[] productExceptSelf(int[] nums) {
+
+        int[] left = new int[nums.length];
+        int[] right = new int[nums.length];
+        int[] output = new int[nums.length];
+        int lp=1;
+        for(int i=0;i<nums.length;i++){
+            lp *=nums[i];
+            left[i] = lp;
+        }
+
+        System.out.println(Arrays.toString(left));
+        int rp=1;
+        for(int i = nums.length-1;i>=0;i--){
+            rp = rp*nums[i];
+            right[i] = rp;
+        }
+
+        System.out.println(Arrays.toString(right));
+
+        for(int i =0;i<nums.length;i++){
+            if(i==0){
+                output[i]=right[0];
+            }else if(i==nums.length-1){
+                output[i]=left[nums.length-2];
+            }else{
+                output[i] = left[i-1]*right[i+1];
+            }
+        }
+
+        System.out.println(Arrays.toString(output));
+        return output;
     }
 
 }

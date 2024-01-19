@@ -27,7 +27,8 @@ import java.util.Arrays;
  * 548, 60}, the arrangement 6054854654
  * gives the largest value.
  * */
-public class FindLargestAndSmallestNumber {
+public class
+FindLargestAndSmallestNumber {
 
     public static void main(String[] args) {
        // int arr[] = {3, 30, 34, 5, 9};

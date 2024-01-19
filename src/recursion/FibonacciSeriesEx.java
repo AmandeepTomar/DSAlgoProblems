@@ -16,7 +16,7 @@ public class FibonacciSeriesEx {
             return 1;
         }else {
             int num=getFibonacciSeries(a-1)+getFibonacciSeries(a-2);
-            System.out.println(num);
+           /// System.out.print(num+" ");
             return num;
         }
     }

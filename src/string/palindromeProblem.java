@@ -24,34 +24,29 @@ public class palindromeProblem {
     public static void main(String[] args) {
         String str="abecbea";
         String str1="abcbea";
-        System.out.println(solution(str1)+" char At "+str.charAt(solution(str1)));
+        System.out.println(solution(str1)+" char At "+str1.charAt(solution(str1)));
+
+        System.out.println(str1.charAt(4));
     }
 
     private static int solution(String str) {
 
         int i=0;
         int j=str.length()-1;
-        int index=0;
-        while (i<=j){
-            if (str.charAt(i)==str.charAt(j)){
-                i++;
-                j--;
-            }else{
-                // this one is incorrect
-                // need to check for i+1 and j-1 got both time. sub string
-                    if (isPalindrome(str,i+1,j)){
-                        return i;
-                    }
-
-                    if (isPalindrome(str,i,j-1)){
-                        return j;
-                    }
-
+        while (i<j) {
+            if (str.charAt(i)!=str.charAt(j)){
+                if (isPalindrome(str,i+1,j)){
+                    return i;
+                }else if (isPalindrome(str,i,j-1)){
+                    return j;
+                }else {
+                    return -1; // can be palindrome.
+                }
             }
+            i++;
+            j--;
         }
-
-        System.out.println(" index value is "+str.charAt(index));
-        return -2;
+        return -2; // string is already a palindrome.
     }
 
     private static boolean isPalindrome(String str,int start, int end){

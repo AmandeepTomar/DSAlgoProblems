@@ -17,8 +17,19 @@ public class ReverseString {
     public static void main(String[] args) {
 
         System.out.println(reverseString("amandeep"));
+        System.out.println(reverseString1("amandeep"));
         System.out.println(reverseStringUsingSubString("amandeep"));
     }
+
+   private static String reverseString1(String s){
+        char[] array = s.toCharArray();
+        for (int i=0;i<array.length/2;i++){
+            char ch = array[i];
+            array[i]=array[array.length-i-1];
+            array[array.length-i-1] = ch;
+        }
+        return new String(array);
+   }
 
     static String reverseString(String s){
         System.out.println("String is "+s);

@@ -7,7 +7,7 @@ package javainterviewquestions;
  * No setter method.
  * Can set values only through constructor
  */
-public class ImmutableClass {
+final class ImmutableClass {
 
     private final String name;
     private final int age;
