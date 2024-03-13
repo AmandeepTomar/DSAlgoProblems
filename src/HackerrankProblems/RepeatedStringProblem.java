@@ -4,7 +4,7 @@ public class RepeatedStringProblem {
 
     public static void main(String[] args) {
 
-        System.out.println(repeatedString("aba",10));
+        System.out.println(repeatedString("aba",5));
         System.out.println(repeatedString("abbb",1000000000));
     }
 

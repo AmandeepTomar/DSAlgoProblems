@@ -9,13 +9,13 @@ public class StringPermutationProblem {
         list.add(null);
 
         String str="abc";
-        System.out.println(str.substring(1));
+     //   System.out.println(str.substring(1));
 
         int left=0;
         int right=str.length()-1;
         findStringPermutation(str,left,right);
         System.out.println();
-        findStringPermutationUsingSubstring(str,"");
+       // findStringPermutationUsingSubstring(str,"");
     }
 
     private static void findStringPermutationUsingSubstring(String str, String result) {
@@ -36,7 +36,7 @@ public class StringPermutationProblem {
     }
 
     private static void findStringPermutation(String str , int left, int right) {
-
+        // left ==0 , right = str.length() - 1
         if (left == right)
             System.out.println(str);
         else

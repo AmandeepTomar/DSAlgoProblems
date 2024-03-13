@@ -1,5 +1,7 @@
 package ArraysProblem;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
@@ -27,6 +29,9 @@ public class FindKthLargestNumberInArray {
         int arr1[]=new int[]{8,7,6,1,2,3,10,8,2,1,32,10};
         int kth1=3;
         System.out.println(findKthLargestNumber(arr1,kth1));
+
+        ArrayList<Integer> list = new ArrayList<>();
+        Collections.reverse(list);
     }
 
     static Integer findKthLargestNumber(int[] arr, int kth){
@@ -34,10 +39,12 @@ public class FindKthLargestNumberInArray {
         //  PriorityQueue<Integer> queue=new PriorityQueue<>(Collections.reverseOrder()) from Collections.reverseOrder()
         PriorityQueue<Integer> queue=new PriorityQueue<>();
 
+        queue.size();
+
         for (int i=0;i<arr.length;i++){
             queue.add(arr[i]);
             if (queue.size()>kth) {
-                queue.poll(); // remove
+                System.out.println(queue.poll());; // remove
             }
         }
         return queue.peek(); // fetch

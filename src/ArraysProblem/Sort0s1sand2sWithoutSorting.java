@@ -1,6 +1,6 @@
 package ArraysProblem;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Sort 0 , 1 and 2 without using sorting
@@ -12,6 +12,10 @@ public class Sort0s1sand2sWithoutSorting {
         int arr[]={1,1,0,1,0,2,1,0,1,2};
         approach1(arr);
         approach2(arr);
+
+        List<Integer> list = new ArrayList<>();
+
+        Collections.sort(list, (o1, o2) -> Math.abs(o1)-Math.abs(o2));
     }
 
     private static void approach2(int[] arr) {
