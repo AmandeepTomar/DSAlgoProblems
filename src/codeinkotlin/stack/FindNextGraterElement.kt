@@ -1,4 +1,4 @@
-package codeinkotlin.hashmapcreation.stack
+package codeinkotlin.stack
 
 /***
  * Given an array arr[ ] of size N having elements, the task is to find the next greater element for each element of the array in

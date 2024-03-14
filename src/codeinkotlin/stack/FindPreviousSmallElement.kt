@@ -1,4 +1,4 @@
-package codeinkotlin.hashmapcreation.stack
+package codeinkotlin.stack
 
 
 /***

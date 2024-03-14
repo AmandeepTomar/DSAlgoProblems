@@ -52,6 +52,7 @@ public class FindAnagramInString {
             }
             i++;
         }
+        // last
         if (compareMapFrequency(pMap, sMap)){
             count++;
             index += i-pattern.length()+" ";

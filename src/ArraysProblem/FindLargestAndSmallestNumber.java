@@ -31,8 +31,8 @@ public class
 FindLargestAndSmallestNumber {
 
     public static void main(String[] args) {
-       // int arr[] = {3, 30, 34, 5, 9};
-        int arr[] = {3, 1,2};
+       int arr[] = {3, 30, 34, 5, 9};
+       // int arr[] = {3, 1,2};
         System.out.println("Largest Number is "+ solutionLargest(arr));
         System.out.println("Smallest Number is "+smallest(arr));
     }
@@ -48,7 +48,7 @@ FindLargestAndSmallestNumber {
         Arrays.sort(strs,(str1,str2)->(str2+str1).compareTo(str1+str2));
 
         if (strs[0].charAt(0)=='0') return "0";
-
+        System.out.println(Arrays.toString(strs));
         StringBuilder sb =new StringBuilder();
         for (String str:strs){
             sb.append(str);
