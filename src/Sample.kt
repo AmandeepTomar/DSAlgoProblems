@@ -20,9 +20,15 @@ fun main() {
 //    println()
 //    reverseANo(1234)
 
+//    val str = "hi abc123"
+//    val resgx = Regex("[^a-zA-Z]")
+//    val data = resgx.replace(str,"")
+//    println(data)
+
     pringSubSequence("abc",0,"")
 
 }
+
 
 fun pringSubSequence(s: String , index:Int,res:String) {
     var i = index
@@ -42,7 +48,7 @@ fun reverseANo(i: Int) {
     var num = i
     while(num>0){
         res = res*10+num%10
-        num = num/10
+        num /= 10
     }
     println(res)
 }

@@ -5,7 +5,7 @@
 
 
 ## Requirements
-- 3*3 Metrics , We ahev assign x and o as two user 
+- 3*3 Metrics , We have assign x and o as two user 
 - Winner 
   - Same sign in row , column and diagonal
 - Piece

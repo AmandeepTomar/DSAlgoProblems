@@ -40,7 +40,7 @@ A class should have one reason to change. Class should have single responsibilit
 - As we have created a class to save the invoice in db and code is live. now we have new requirements.
 - New Requirement is 
   - Save the invoice in file also. 
-  - Now we have created an `intercae SaveInvoice` that will be implemented by two class `SaveInvoiceToDB` and `SaveInvoiceToFile`
+  - Now we have created an `interface SaveInvoice` that will be implemented by two class `SaveInvoiceToDB` and `SaveInvoiceToFile`
   - this we will every time extends the functionality as we required new functionality.
 
 Code with Open for extension close for modification.

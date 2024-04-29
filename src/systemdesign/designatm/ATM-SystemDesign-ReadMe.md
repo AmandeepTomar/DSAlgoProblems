@@ -7,7 +7,7 @@ this will use the Chain of responsibility design pattern and State design patter
 
 ## Flow
 
-- As user come with card and goest to an ATM ,
+- As user come with card and goes to an ATM ,
 - he insert the card in the ATM
     - Once the card ATM inserted , it will authenticate the PIN.
     - After successfull Authentication provide some options to perform operation
